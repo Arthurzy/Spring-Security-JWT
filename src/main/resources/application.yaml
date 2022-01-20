@@ -1,0 +1,14 @@
+logging:
+  level:
+    org.springframework.security: INFO
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-308298.okta.com
+
+static-jwt:
+  hmacsecret: "some-super-random-256-bit-secret"
+  issuer: "https://static.token.generator.local"
